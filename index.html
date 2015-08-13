@@ -73,24 +73,26 @@ table#t01 th	{
     <th>Dates</th>
   </tr>
   <tr>
-  	<td> <button onclick="myFunction()">8/11/15</button>
-
-<p id="crag"></p>
+  	<td> <button onclick="myFunction()">Try it</button>
 
 <script>
 function myFunction() {
-    document.getElementById("crag").innerHTML = "Notedy Note notes... Notes Notes!!";
+    var para = document.createElement("P");
+    var t = document.createTextNode("This is a paragraph.");
+    para.appendChild(t);
+    document.body.appendChild(para);
 }
 </script></td>
   </tr>
   <tr>
-  	<td> <button onclick="myFunction()">8/12/15</button>
-
-<p id="demo2"></p>
+  	<td> <button onclick="myFunction()">Try it</button>
 
 <script>
 function myFunction() {
-    document.getElementById("demo2").innerHTML = "Other notes";
+    var para = document.createElement("P");
+    var t = document.createTextNode("This is a paragraphhhhh BOOM.");
+    para.appendChild(t);
+    document.body.appendChild(para);
 }
 </script></td>
   </tr>
