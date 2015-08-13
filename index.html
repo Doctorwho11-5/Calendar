@@ -84,3 +84,11 @@ function changeText(id) {
     id.innerHTML = "Ooops!";
 }
 </script>
+<script type="text/javascript">
+	$(document).ready(function(){ //hide the all of the element with class msg_body
+	 $(".msg_body").hide();  //toggle the component with class msg_body
+	 $(".msg_head").click(function()
+	 {
+	 		$(this).next(".msg_body").slideToggle();
+		});});
+</script>
